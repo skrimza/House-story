@@ -1,0 +1,141 @@
+.header
+    padding-top: 40px
+    padding-bottom: 28px
+    box-shadow: -11px -10px 51px rgba(0, 0, 0, 0.25), 0px 0px 26px rgba(0, 0, 0, 0.53)
+    &-row
+        display: grid
+        grid-gap: 60px
+        grid-template-columns: 203px repeat(3, 1fr) 28px
+        margin-bottom: 30px
+        align-items: center
+    &-logo
+        &__text
+            font-size: 14px
+            color: #ffffff
+            text-align: center
+    &-tel
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__list
+            margin-bottom: 4px
+            width: 100%
+            position: relative
+            border: 1px solid rgba(255, 255, 255, 0.2)
+            border-radius: 5px
+            &.active
+                border: none
+                box-shadow: -11px -10px 51px rgba(0, 0, 0, 0.25), 0px 0px 26px rgba(0, 0, 0, 0.53)
+                border-radius: 5px 5px 0 0
+        &__tab
+            padding: 9px 25px 9px 51px
+            
+            background: url('../images/phone.svg') no-repeat 8% 50%
+        &__link
+            color: #1EAB5F
+            font-size: 20px
+            margin-right: 20px
+        &__text
+            color: #ffffff
+            font-size: 16px
+            
+            & span
+                display: inline-block
+                border-radius: 50%
+                width: 10px
+                height: 10px
+                background-color: #1EAB5F
+                margin-right: 8px
+        &__btn
+            border: none
+            background: none
+            width: 20px
+            transform: rotate(90deg)
+            transition: all 0.5s ease
+            &.rotate
+                transform: rotate(270deg)
+            &-left
+                background: #fff
+                width: 100%
+                height: 1px
+                transform: rotate(45deg)
+            &-right
+                background: #fff
+                width: 100%
+                height: 1px
+                transform: rotate(135deg)
+                margin-top: 8px
+        &__enclosure-list
+            width: 100%
+            position: absolute
+            left: 0
+            bottom: 0
+            transform: translateY(100%)
+            background: #2C2C2E
+            visibility: hidden
+            transition: all 0.5s ease
+            &.active
+                visibility: visible
+                box-shadow: 0 20px 30px 10px rgba(0, 0, 0, 0.25)
+                padding-bottom: 20px
+    &-social
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__list
+            display: flex
+            margin-bottom: 4px
+        &__tab
+            margin-right: 13px
+            &:last-of-type
+                margin-right: 0
+        &__text
+            color: #ffffff
+            & span
+                display: inline-block
+                width: 10px
+                height: 10px
+                background: #1EAB5F
+                border-radius: 50%
+                margin-right: 8px
+    &-record
+        &__btn
+            border-radius: 5px
+            display: block
+            background: #444343
+            color: #ffffff
+            text-align: center
+            padding: 24px
+    &-menu
+        &__btn
+            width: 100%
+            height: 20px
+            background: none
+            border: none
+            position: relative
+            & span
+                display: block
+                border-radius: 5px
+                position: absolute
+                width: 100%
+                height: 2px
+                background: #ffffff
+                left: 0
+                &:first-of-type
+                    top: 0
+                &:last-of-type
+                    bottom: 0
+    &-nav
+        display: grid
+        grid-template-columns: repeat(5, auto)
+        max-width: 1010px
+        grid-gap: 40px
+        &__link
+            padding: 10px 15px
+            border: 1px solid rgba(255, 255, 255, 0.2)
+            border-radius: 5px
+            color: #fff
+            text-align: center
+            transition: all 0.5s ease
+
+    
