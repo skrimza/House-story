@@ -138,4 +138,93 @@
             text-align: center
             transition: all 0.5s ease
 
-    
+// dropdown
+.wrapper-dropdown-5 
+    /* Size & position */
+    position: relative
+    width: 100%
+    margin: 0 auto 4px
+    padding: 12px 51px
+
+    /* Styles */
+    font-size: 20px
+    color: #1EAB5F
+    background: url('../images/phone.svg') no-repeat 8% 50%, #2c2c2e 
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    border-radius: 5px
+    cursor: pointer
+    outline: none
+    -webkit-transition: all 0.3s ease-out
+    -moz-transition: all 0.3s ease-out
+    -ms-transition: all 0.3s ease-out
+    -o-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+
+// /* Little arrow */
+.wrapper-dropdown-5:after  
+    content: ""
+    width: 0
+    height: 0
+    position: absolute
+    top: 50%
+    right: 15px
+    margin-top: -3px
+    border-width: 6px 6px 0 6px
+    border-style: solid
+    border-color: #fbfdfd transparent
+
+
+.wrapper-dropdown-5 .dropdown 
+    /* Size & position */
+    position: absolute
+    top: 100%
+    left: 0
+    right: 0
+
+    /* Styles */
+    background: #2c2c2e
+    border-radius: 0 0 5px 5px
+    border: none
+    border-top: none
+    border-bottom: none
+    list-style: none
+    -webkit-transition: all 0.3s ease-out
+    -moz-transition: all 0.3s ease-out
+    -ms-transition: all 0.3s ease-out
+    -o-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+
+    /* Hiding */
+    max-height: 0
+    overflow: hidden
+
+.wrapper-dropdown-5 .dropdown li 
+    background: url('../images/phone.svg') no-repeat 8% 50%
+    padding: 0 51px 
+
+.wrapper-dropdown-5 .dropdown li a 
+    display: block
+    text-decoration: none
+    color: #1EAB5F
+    font-size: 20px
+    padding: 10px 0
+    transition: all 0.3s ease-out
+    border-bottom: 1px solid #e6e8ea
+.wrapper-dropdown-5 .dropdown li:last-of-type a 
+    border: none
+/* Active state */
+
+.wrapper-dropdown-5.active 
+    border-radius: 5px 5px 0 0
+    box-shadow: -11px -10px 51px rgba(0, 0, 0, 0.25), 0px 0px 26px rgba(0, 0, 0, 0.53)
+    border: none
+    color: white
+
+.wrapper-dropdown-5.active:after 
+    border-color: #fafafa transparent
+
+
+.wrapper-dropdown-5.active .dropdown
+    box-shadow: 5px 10px 11px 5px rgba(0, 0, 0, 0.25), 0px 10px 10px 0px rgba(0, 0, 0, 0.53) 
+    border-bottom: none
+    max-height: 400px

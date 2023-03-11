@@ -1,0 +1,105 @@
+.head
+    padding-top: 57px
+    padding-bottom: 40px
+    &-content
+        max-width: 660px
+    &-row
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        &__title
+            max-width: 652px
+            margin-bottom: 16px
+            font-size: 40px
+            background: linear-gradient(91.24deg, #1EAB5F 0.36%, #E7B97E 103.9%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
+        &__description
+            font-size: 26px
+            color: #fff
+            max-width: 600px
+            margin-bottom: 56px
+        &__text
+            font-size: 20px
+            font-weight: 700
+            color: #fff
+            margin-bottom: 8px
+            &_little
+                font-size: 16px
+                color: #fff
+                margin-bottom: 16px
+                & span
+                    color: #1EAB5F
+    &-bg
+        &__image
+            background: linear-gradient(90deg, #2C2C2E 0.87%, rgba(44, 44, 46, 0.78) 8.72%, rgba(44, 44, 46, 0.68) 16.27%, rgba(44, 44, 46, 0) 30.03%, rgba(44, 44, 46, 0) 96.77%), linear-gradient(180deg, rgba(44, 44, 46, 0.7) 0%, rgba(44, 44, 46, 0) 33.51%, rgba(44, 44, 46, 0) 84.41%, #2C2C2E 99.78%), url('../images/home-img.jpg')
+            display: block
+            width: 100%
+            height: 100%
+            background-size: 728px 480px
+form
+    display: grid
+    grid-template-columns: repeat(2, auto)
+    grid-gap: 16px 40px
+    max-width: 660px
+    & input
+        padding: 15px
+        background: none
+        border: 1px solid #1EAB5F
+        border-radius: 5px
+        color: #ffffff
+        font-size: 16px
+        font-family: 'roboto', sans-serif
+.form-text
+    max-width: 310px
+    text-align: center
+    margin: 8px 0 26px auto
+    font-size: 12px
+    color: #ffffff
+    background: url('../images/lock.svg') no-repeat left center
+.argument
+    padding: 40px 0
+    &__title
+        margin-bottom: 40px
+        font-weight: 400
+    &-row
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 40px
+        &__block
+            display: flex
+            &_image
+                margin-right: 32px
+            &_title
+                color: #ffffff
+                font-size: 20px
+                font-weight: 500
+                margin-bottom: 11px
+            &_text
+                color: #fff
+.choise
+    padding: 40px 0
+    &-title
+        margin-bottom: 40px
+    &-row
+        display: grid
+    &-group
+        display: flex
+        flex-direction: column
+        &__btn
+            max-width: 310px
+            width: 100%
+            text-align: left
+            padding: 28px 20px
+            border-radius: 5px
+            background: rgba(255, 255, 255, 0.05)
+            border: none
+            box-shadow: inset 4px 4px 25px rgba(241, 241, 241, 0.25)
+            margin-bottom: 40px
+            color: #fff
+            transition: all 0.5s ease
+            &.active
+                color: #E7B97E
+
+    
